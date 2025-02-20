@@ -15,8 +15,8 @@ function convertToRoman(num) {
    for(const key  in obj){
 	   const [symbol , value] =obj[key];
 	   while(num >= value){
-		   result=result+symbol;
-		   num = num-value;
+		   result += symbol;
+		   num -= value;
 	   }
    }
 
